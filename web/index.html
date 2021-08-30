@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.3.0/web/hack.min.css">
+    <title>Proxy ~ Home</title>
+</head>
+<body>
+    <h1>Wep Interface</h1>
+    <div class="box">
+    <p>Copie o Endereço e Use Como Proxy</p>
+    <btn class="ad" onclick="copyToClipboard('#addr')" id="addr">...</btn>
+    </div>
+</body>
+<footer>Service By <a style="color: yellowgreen;" href="https://github.com/gh-ninja">Ninja</a></footer>
+<style>
+    body {
+        background-color: #345ba5;
+        color: wheat;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .sp {
+       border: 1px solid #534d4d;
+    }
+    .ad {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+        font-family: Hack;
+        border: 3px solid #534d4d;
+        background-color: #534d4d;
+        border-radius: 4px;
+    } .ad:hover {
+        border-color: forestgreen;
+        background-color: forestgreen;
+    }
+    .box {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 25rem;
+        padding: 2.5rem;
+        box-sizing: border-box;
+        border: 1px solid #dadce0;
+        -webkit-border-radius: 8px;
+        border-radius: 8px;
+
+        
+    }
+    @media screen and (max-width: 600px) {
+        .box {
+             border-color: transparent;
+             align-content: center;
+             text-align: center;
+             flex-direction: column;
+             position: fixed;
+        }
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #0062ff;
+        color: white;
+        text-align: center;
+    }
+</style>
+<script>
+    function copyToClipboard(element) {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($(element).text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+
+        alert("Copied")
+    }
+    void (async ()=>{
+        await update()
+    })()
+
+    async function update(){
+        const  addr =  await fetch(location.href+"/addr").then( data => data.text())
+        const addr_page = document.getElementById("addr")
+        addr_page.innerText = addr
+    }
+</script>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous">
+</script>
+</html>

@@ -1,0 +1,6 @@
+{
+    "target":"https://google.com",
+    "kepalive":true,
+    "web-interface-port":8080,
+    "proxy-port":8081
+}
