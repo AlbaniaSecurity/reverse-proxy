@@ -5,7 +5,7 @@
 
 # Dependencies
 - [Go](https://golang.org/)
-- [Make](https://www.google.com/search?q=how+to+install+openssh&sxsrf=AOaemvIu0KAG4BEx55ZzdLlcO09fPSmdcg%3A1630011658999&source=hp&ei=CgEoYaaKOqa91sQP7vWFsAE&iflsig=ALs-wAMAAAAAYSgPGt6zvHfeVgiypHo4N9lLvNY6zv5A&oq=how+to+install+openssh&gs_lcp=Cgdnd3Mtd2l6EANQAFgAYJwBaABwAHgAgAEAiAEAkgEAmAEA&sclient=gws-wiz&ved=0ahUKEwimt6XPys_yAhWmnpUCHe56ARYQ4dUDCAg&uact=5)
+- [Make](https://www.google.com/search?q=how+to+install+and+use+make&sxsrf=AOaemvIDurREKHM1mD434VRIASsFjPm0lQ%3A1630461057089&source=hp&ei=gdwuYZKFA4Ou5OUPsp-akAo&iflsig=ALs-wAMAAAAAYS7qkcG54HJBz1ihgC8eVKHYVKqP4gKO&oq=how+to+install+and+use+make&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEMsBOgcIIxDqAhAnOgQIIxAnOgsIABCABBCxAxCDAToOCC4QgAQQsQMQxwEQowI6EQguEIAEELEDEIMBEMcBEKMCOgsILhCABBCxAxCDAToRCC4QgAQQsQMQgwEQxwEQ0QM6BQguEIAEOgoIABCxAxCDARBDOgQIABBDOgYIIxAnEBM6CAgAEIAEELEDOggILhCxAxCDAToOCC4QsQMQgwEQxwEQowI6CAguEIAEELEDOgUIABCABDoGCAAQFhAeOgcIIxCwAhAnOgQIABANOgYIABANEB5QxgxY7ntgi5ABaBBwAHgCgAG9AogBvzWSAQgwLjM0LjcuMZgBAKABAbABCg&sclient=gws-wiz&ved=0ahUKEwjSyYDh1NzyAhUDF7kGHbKPBqIQ4dUDCAg&uact=5)
 # Suport
 - [x] Termux (android/afsd kernel)
 - [x] linux (kernel)
